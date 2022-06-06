@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <figure class="image center">
+                    <img src="title.png" style="max-width: 512px;">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <article class="message is-danger">
+                        <div class="message-header">
+                        <p>To Do - Today</p>
+                        </div>
+                        <div class="message-body">
+                            <form action="/toDoForm" id="toDoForm">
+                                <div class="field is-grouped">
+                                    <div class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Task" id="inputTask">
+                                    </div>
+                                    <div class="control">
+                                    <button class="button is-danger">Add</button>
+                                    </div>
+                                </div>
+                        
+                            </form>
+                            <p class="block">Click to eliminate</p>
+                            <ol class= "block"id="list"></ol>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="message is-info">
+                        <div class="message-header">
+                        <p>To Do this Week</p>
+                        </div>
+                        <div class="message-body">
+                            <form action="/toDoForm" id="toDoForm2">
+                                <div class="field is-grouped">
+                                    <div class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Task" id="inputTask2">
+                                    </div>
+                                    <div class="control">
+                                    <button class="button is-info">Add</button>
+                                    </div>
+                                </div>
+                        
+                            </form>
+                            <p class="block">Click to eliminate</p>
+                            <ol class= "block"id="list2"></ol>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="message is-primary">
+                        <div class="message-header">
+                        <p>Goals of this Month</p>
+                        </div>
+                        <div class="message-body">
+                            <form action="/toDoForm" id="toDoForm3">
+                                <div class="field is-grouped">
+                                    <div class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Goal" id="inputTask3">
+                                    </div>
+                                    <div class="control">
+                                    <button class="button is-primary">Add</button>
+                                    </div>
+                                </div>
+                        
+                            </form>
+                            <p class="block">Click to eliminate</p>
+                            <ol class= "block"id="list3"></ol>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p class="is-family-sans-serif">
+            "A goal without a plan is just a wish."
+          </p>
+        </div>
+      </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+    
+</html>
